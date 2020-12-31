@@ -31,9 +31,9 @@ if bytesPerElement == 1:
     totalMemory = ["00"]*memorySizeInBytes
 elif bytesPerElement == 2:
     totalMemory = ["0000"]*(memorySizeInBytes//2)
-if bytesPerElement == 4:
+elif bytesPerElement == 4:
     totalMemory = ["00000000"]*(memorySizeInBytes//4)
-if bytesPerElement == 8:
+elif bytesPerElement == 8:
     totalMemory = ["0000000000000000"]*(memorySizeInBytes//8)
 
 
